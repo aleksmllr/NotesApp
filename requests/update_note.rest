@@ -1,0 +1,12 @@
+PUT http://localhost:3001/api/notes/642f82769af096d93a3ba3e3
+content-type: application/json
+
+{
+    "content": "lmaooooo",
+    "important": true,
+    "id": "642f5cb0452fb3a1fd630692"
+}
+###
+DELETE http://localhost:3001/api/notes/642f82769af096d93a3ba3e3
+###
+GET http://localhost:3001/api/notes
