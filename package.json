@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../part2/ && npm run build && cp -r build ../NotesApp",
-    "logs:prod": "fly logs"
+    "lint": "eslint ."
   },
   "author": "Aleks Miller",
   "license": "MIT",
@@ -19,6 +19,13 @@
     "mongoose": "^7.0.3"
   },
   "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "nodemon": "^2.0.22"
   }
 }
